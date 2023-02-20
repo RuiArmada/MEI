@@ -7,8 +7,8 @@
  * 18/20
 
 ### Autores
-* [Carlos Gomes](https://github.com/CGDEX)
 * [Ariana Lousada](https://github.com/arbl42)
+* [Carlos Gomes](https://github.com/CGDEX)
+* [Márcia Teixeira](https://github.com/teixeiramarcia)
 * [Rui Armada](https://github.com/RuiArmada)
 * [Tiago Sousa](https://github.com/Existency)
-* [Márcia Teixeira](https://github.com/teixeiramarcia)
