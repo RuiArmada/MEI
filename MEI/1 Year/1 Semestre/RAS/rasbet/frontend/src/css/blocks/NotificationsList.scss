@@ -1,0 +1,30 @@
+@import "../general.scss";
+@import '../vars.scss';
+
+.notificationslist-container {
+    grid-column: 1;
+    background-color: white;
+    box-shadow: $box-shadow-light;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 3.3em);
+
+    .notificationslist {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: auto;
+
+        .no-notifications-label {
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 1em;
+            color: #758994;
+        }
+
+        .notifications-available-soon {
+            text-align: center;
+            color: #758994;
+        }
+    }
+}

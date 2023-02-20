@@ -1,0 +1,9 @@
+# Shared Swap database settings
+app_db_name: swap 
+app_db_user: teste
+#Careful this should be using VAULT!!!!
+app_db_password: 123456 
+# bind ip for DB - Using Inventory file content
+app_db_ip: "{{ groups['db'][0] }}"
+# client ip - Using Inventory file content
+app_user_ip: "{{ groups['app'][0] }}"

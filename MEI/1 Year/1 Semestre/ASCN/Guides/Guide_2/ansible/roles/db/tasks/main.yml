@@ -1,0 +1,31 @@
+---
+- name: Install Mysql packages
+  apt:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ db_packages }}"
+
+- name: Change MySQL bind-address
+  lineinfile: dest=/etc/mysql/mysql.conf.d/mysqld.cnf
+    regexp='bind-address\s*=\s*127\.0\.0\.1\s*'
+    line='bind-address   = {{ app_db_ip }}'
+    state=present
+    backrefs=yes
+  notify: restart mysql
+
+- name: Create Swap database
+  mysql_db: name={{ app_db_name }} state=present
+
+- name: Cleanup users with same name accounts
+  mysql_user:
+    name: "{{ app_db_user }}"
+    host_all: yes
+    state: absent
+
+- name: Create database user with password and all database privileges and 'WITH GRANT OPTION'
+  mysql_user:
+    name: "{{ app_db_user }}"
+    password: "{{ app_db_password }}"
+    priv: '*.*:ALL,GRANT'
+    host: "{{ app_user_ip }}"
+    state: present

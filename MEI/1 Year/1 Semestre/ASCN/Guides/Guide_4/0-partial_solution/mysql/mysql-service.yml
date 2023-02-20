@@ -1,0 +1,16 @@
+---
+# Service for exposing MySQL
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-service # logical name of the service, which will also become the DNS name of the service when it is created.
+  labels:
+    app: mysql
+    tier: database
+spec:
+  type: ClusterIP
+  selector:
+    app: mysql
+  ports:
+    - targetPort: 3306 # port that containers are listening on
+      port: 3306 # port number exposed internally in the cluster

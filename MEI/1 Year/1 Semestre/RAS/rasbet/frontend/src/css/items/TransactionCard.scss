@@ -1,0 +1,20 @@
+@import '../vars.scss';
+
+.transaction-card{
+    // display: grid;
+    // grid-template-columns: 33% auto;
+    // flex-direction: row;
+    padding: 1em;
+    margin: 0.5em 1em;
+    background-color: white;
+    border: 1px solid $primary-green;
+    border-radius: 0.5em;
+    box-shadow: $box-shadow-light;
+
+    .transaction-value-info{
+        font-size: 1.0rem;
+        font-weight: bold;
+        color: #758994;
+    }
+
+}

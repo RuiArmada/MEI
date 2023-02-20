@@ -1,0 +1,16 @@
+---
+- name: DB install and start
+  hosts: db 
+  become: yes
+  roles:
+    - db
+  tags: 
+    - dbinstall
+
+- name: Swap configure, install, deploy and seed
+  hosts: app
+  roles:
+    - {role: app}
+    - {role: seed_app, when: "seed_data is defined and seed_data == 'true'" }
+  tags:
+    - appinstall

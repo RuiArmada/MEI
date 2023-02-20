@@ -1,0 +1,32 @@
+@import "../general.scss";
+@import '../vars.scss';
+
+.joint-btn {
+    margin: 0.5em auto;
+
+    button {
+        border: 0;
+        background-color: white;
+        padding: 0.5em 1em;
+        font-size: 1em;
+    
+        &:hover {
+            background-color: #e8eff1;
+            cursor: pointer;
+        }
+
+        &.selected {
+            background-color: $primary-green;
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    button:first-child {
+        border-radius: 0.5em 0 0 0.5em;
+    }
+
+    button:last-child {
+        border-radius: 0 0.5em 0.5em 0;
+    }
+}

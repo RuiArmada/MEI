@@ -1,0 +1,64 @@
+@import '../vars.scss';
+
+nav {
+    background-color: $primary-green;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2em;
+
+    h2 {
+        width: fit-content;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: auto;
+        flex-grow: 1;
+        margin-left: 2em;
+        
+
+        a {
+            color: inherit; /* blue colors for links too */
+            text-decoration: inherit; /* no underline */
+        }
+        
+        li {
+            padding: 1em 0.5em;
+            list-style: none;
+            font-size: 1.2rem;
+
+            &:hover {
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            &.selected {
+                background-color: $light-green;
+                border-radius: 2em;
+                padding: 0.4em 0.5em;
+                color: $primary-green;
+                font-weight: bold;
+            }
+
+        }
+
+        img {
+            padding: 10px;
+            width: 40px;
+        }
+    }
+
+    .logout-btn {
+        font-weight: bold;
+        text-align: right;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

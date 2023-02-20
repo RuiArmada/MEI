@@ -1,0 +1,5 @@
+---
+- name: Seed DB Swap
+  shell: php artisan db:seed
+  args:
+    chdir: ~/swap

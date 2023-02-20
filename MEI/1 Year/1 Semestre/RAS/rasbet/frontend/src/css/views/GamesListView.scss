@@ -1,0 +1,8 @@
+@import "../general.scss";
+@import '../vars.scss';
+
+.gameslistview-container {
+    display: grid;
+    grid-template-columns: auto 33%;
+    width: 100%;
+}

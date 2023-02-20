@@ -1,0 +1,12 @@
+@import '../vars.scss';
+
+.signin-input {
+    outline: none;
+    padding: 1em 1.25em;
+    width: calc(100% - 2.5em);
+    border-radius: 5px;
+    font-size: 1em;
+
+    background-color: #ebebeb;
+    border: none;
+}

@@ -1,0 +1,35 @@
+@import '../vars.scss';
+
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    button {
+        padding: 1.0rem 25rem;
+        margin: 0.5em 1em;
+        background-color: white;
+        border: 1px solid $primary-green;
+        border-radius: 0.5em;
+        width: calc(100% - 2em);
+        box-shadow: $box-shadow-light;
+        text-align: center;
+        font-size: 1.0rem;
+
+        &:hover {
+            border-color: $primary-green;
+            background-color: $light-green;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        a {
+            color: inherit; /* blue colors for links too */
+            text-decoration: inherit; /* no underline */
+        }
+    }
+    img {
+        padding: 10px;
+        width: 50px;
+    }
+}

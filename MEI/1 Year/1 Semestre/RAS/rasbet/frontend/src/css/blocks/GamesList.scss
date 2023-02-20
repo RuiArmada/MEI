@@ -1,0 +1,44 @@
+@import "../general.scss";
+@import '../vars.scss';
+
+.gameslist-container {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 3.3em);
+
+    .searchbar-container {
+        width: auto;
+        border: 1px solid $primary-green;
+        border-radius: 100px;
+        padding: 0.2em 0.5em;
+        margin: 1em;
+
+        input {
+            width: 100%;
+            border: 0;
+            border-radius: 100px;
+            outline: 0;
+            font-size: 1rem;
+        }
+    }
+
+    .gameslist {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: auto;
+
+        .no-games-label {
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 1em;
+            color: #758994;
+        }
+
+        .game-available-soon {
+            text-align: center;
+            color: #758994;
+        }
+    }
+}

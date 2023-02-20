@@ -1,0 +1,70 @@
+@import '../vars.scss';
+
+.bet-card {
+    background-color: white;
+    border: 1px solid $primary-green;
+    border-radius: 0.3em;
+    margin: 0.5em 1em;
+    padding: 0.5em;
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5em 1em;
+
+        .betcard-id {
+            display: flex;
+            flex-direction: column;
+            
+            label:first-child {
+                font-weight: bold;
+            }
+        }
+
+
+        button {
+            border: 0;
+            background-color: transparent;
+            font-size: 1em;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.cancel-btn {
+                background-color: #da3636;
+                padding: 0.2em 0.6em;
+                border-radius: 0.8em;
+                color: white;
+            }
+        }
+    }
+
+    hr {
+        border: 1px solid #c9d4d9;
+    }
+
+    .bet-info {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5em 1em;
+
+        .bet-odd-label {
+            margin-left: auto;
+            margin-right: 1em;
+        }
+
+        label {
+            margin: auto 0;
+            margin-right: 1em;
+        }
+
+    }
+}
+
+.bet-odd-label {
+    border-radius: 0.4em;
+    border: 1px solid rgb(147, 162, 162);
+    padding: 0.5em;
+}

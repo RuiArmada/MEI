@@ -1,0 +1,35 @@
+@import '../vars.scss';
+
+form {
+    padding: 1em;
+    margin: auto;
+    width: 60%;
+
+    input {
+        &:focus {
+            border: 1px solid $primary-green
+        }
+    }
+
+    .row {
+        margin: 1em 0;
+    }
+
+    button {
+        background-color: $orange;
+        border: 0;
+        border-radius: 5em;
+        padding: 1em;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: .2s;
+        width: 100%;
+        margin-top: 2em;
+
+        &:hover {
+            background-color: $light-orange;
+            cursor: pointer;
+        }
+    }
+}
