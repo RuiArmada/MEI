@@ -1,4 +1,4 @@
-### Prediction Models of 2 Datasets
+# Prediction Models of 2 Datasets
 
 * **Dataset 1:** Traffic accidents on a certain city
 * **Dataset 2:** USA housing prices
