@@ -1,6 +1,6 @@
 # TP-ESR
 
-A *Twitch* like application for video streaming
+A Twitch like application for video streaming
 
 ## How to Run
 
