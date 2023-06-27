@@ -25,9 +25,9 @@ This repository contains projects/exercises developed during my Master's Degree 
 
 ### *Semester 2*
 
-  Specialization: [CG - Computer Graphics](https://github.com/RuiArmada/Perfil-CG)
+  Major: [CG - Computer Graphics](https://github.com/RuiArmada/Perfil-CG)
   
-  Specialization: Soon™️
+  Major: Soon™️
   
 ## **Year 2** 🎓
   
