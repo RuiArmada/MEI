@@ -34,5 +34,5 @@ This repository contains projects/exercises developed during my Master's Degree 
   Soon™️
 
 <div align="center">
-  <sub>2022 - PRESENT</sub>
+  <sub>2022 - 2024</sub>
 </div>
