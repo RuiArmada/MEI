@@ -27,7 +27,7 @@ This repository contains projects/exercises developed during my Master's Degree 
 
   Major: [CG - Computer Graphics](https://github.com/RuiArmada/Perfil-CG)
   
-  Major: Soon™️
+  Major: [EI - Internet Engineering](https://github.com/RuiArmada/Perfil-EI)
   
 ## **Year 2** 🎓
   
